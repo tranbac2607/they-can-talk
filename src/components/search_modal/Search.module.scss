@@ -1,0 +1,63 @@
+$background-color: #fff;
+$color-btn: #BCBCBC;
+
+.search {
+    .test {
+        position: fixed;
+        left: 200px;
+        width: 100vw;
+        height: 201px;
+        z-index: 1;
+        overflow: hidden;
+        border-bottom: 2px solid #eee;
+    }
+    .searchFrame {
+        position: fixed;
+        left: 200px;
+        background-color: $background-color;
+        height: 200px;
+        width: 100vw;
+        z-index: 9999;
+
+        .searchInput {
+            display: inline-block;
+            width: 100%;
+            border: none;
+            outline: none;
+            max-width: 64%;
+            height: 200px;
+            padding: 50px;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .btnSubmit {
+            position: absolute;
+            top: 50%;
+            right: 242px;
+            color: $color-btn;
+            outline: none;
+            font-size: 20px;
+            border: none;
+            background-color: $background-color;
+            cursor: pointer;
+            margin-top: -12px;
+            padding: 2px 6px;
+        }
+    }
+
+    // .modal {
+    //     position: fixed;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     background-color: #fff;
+    //     z-index: 1;
+    //     opacity: 0.9;
+    //     overflow: hidden;
+    // }
+}
+
+::placeholder {
+    color: $color-btn;
+}

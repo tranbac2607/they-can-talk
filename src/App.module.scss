@@ -1,0 +1,47 @@
+.container {
+    // width: 100vw;
+    position: relative;
+    left: 100px;
+    padding: 100px 80px 80px;
+    overflow: hidden;
+    zoom: 1;
+
+    .listPosts {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}
+
+.modalSearch {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 200px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        position: relative;
+        margin: 0 100px;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .container {
+        position: relative;
+        margin: 0 auto;
+        left: unset;
+        margin-top: 70px;
+    }
+
+    .container.containerActive {
+        position: relative;
+        left: 200px;
+    }
+}

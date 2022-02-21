@@ -1,0 +1,105 @@
+.nav {
+    position: fixed;
+    background-color: #121212;
+    width: 200px;
+    height: 100vh;
+    z-index: 9999;
+
+    .navList {
+        list-style: none;
+        padding: 50px;
+    }
+
+    .navImage {
+        position: relative;
+        width: 96px;
+        height: 96px;
+        background: url(https://64.media.tumblr.com/avatar_5203e285b1b2_128.pnj) no-repeat center / contain;
+        padding-top: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 52px;
+        margin-bottom: 52px;
+        border-radius: 8px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: -52px;
+            left: -52px;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            right: -52px;
+            top: 40px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+        }
+    }
+
+    .navItem{
+        display: block;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 10px 0;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
+    .navItem2 {
+        color: #FFFFFFB3;
+    }
+
+    .navItem:hover, .navItem2:hover {
+        color: rgb(223, 182, 132);
+    }
+}
+
+.navHeader {
+    height: 48px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #121212;
+    z-index: 9999;
+    left: 0;
+    transition: all 0.3s ease;
+        
+    .menuIcon {
+        width: 50px;
+        font-size: 20px;
+        color: #fff;
+        padding: 0 12px;
+        line-height: 48px;
+        cursor: pointer;
+    }
+}
+
+@media screen and(max-width: 660px) {
+    .nav {
+        left: -100%;
+        top: 0;
+        transition: all 0.3s ease;
+
+        .navList {
+            padding: 20px 50px;
+        }
+    }
+
+    .nav.active {
+        left: 0;
+        transition: all 0.3s ease;
+    }
+
+    .navHeader.active {
+        left: 200px;
+        transition: all 0.3s ease;
+    }
+}

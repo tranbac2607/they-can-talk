@@ -1,0 +1,31 @@
+$font-family: "Proxima Nova","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto",Arial,sans-serif;
+$font-cart: 16px;
+
+.namePage {
+    font-size: 24px;
+    color: #282828;
+    margin-bottom: 20px;
+}
+.gridRowProduct {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.cart {
+    text-align: center;
+    color: #757575;
+    padding: 40px 0 20px;
+    
+    .fal {
+        // display: block;
+        line-height: 20px;
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .cartName {
+        font-size: $font-cart;
+        font-family: $font-family;
+        font-weight: 400;
+    }
+}

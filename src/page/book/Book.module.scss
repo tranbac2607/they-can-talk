@@ -1,0 +1,43 @@
+$text-color: #1d2129;
+$font-size: 15px;
+$margin-bot-text: 6px;
+$margin-bot-link: 16px;
+
+.title {
+    display: block;
+    font-size: 24px;
+    color: #282828;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: $font-size;
+    color: $text-color;
+    margin-bottom: $margin-bot-text;
+}
+
+.linkBuys {
+    font-size: $font-size;
+    color: $text-color;
+    margin-bottom: $margin-bot-text;
+}
+
+.linkBuyItem {
+    list-style: none;
+    font-size: $font-size;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    line-height: 28px;
+    color: #ffca66;
+    margin-bottom: $margin-bot-link;
+}
+
+.bookImg {
+    display: block;
+    max-width: 100%;
+}
